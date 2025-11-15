@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a73e8;
+    padding: 15px 50px;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar .logo span {
+    color: #ffcc00;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    background: url("https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1500&q=80") no-repeat center center/cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* Mission Section */
+.mission {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    flex-wrap: wrap;
+}
+
+.mission-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.mission-card h2 {
+    margin-bottom: 15px;
+    color: #1a73e8;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.team h2 {
+    margin-bottom: 30px;
+    color: #1a73e8;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

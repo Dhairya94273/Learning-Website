@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.email {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 16px;
+}
+
+.toggle-password:hover {
+  color: #1a73e8;
+}
+
+
+.submit-buttton {
+  width: 100%;
+  background-color: #ff9900;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.submit-buttton:hover {
+  background-color: black;
+}
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.divider div {
+  padding: 0 10px;
+  font-size: 15px;
+  color: black;
+}
+
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.google-btn,
+.microsoft-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+.microsoft-btn img {
+  vertical-align: middle;
+}
+
+
+.forgot-password a {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    height: auto;
+    padding: 15px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 18px;
+    border-radius: 6px;
+  }
+
+  .container h2 {
+    font-size: 20px;
+  }
+}

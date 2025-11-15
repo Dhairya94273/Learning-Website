@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in Page</title>
+  <link rel="stylesheet" href="Login_page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Log-in</h2>
+    <form>
+      <input type="text" placeholder="Enter Mobile-No/Email"  class="email">
+
+      <div class="password-container">
+        <input type="password" placeholder="Enter Password" class="email" id="password">
+        <button type="button" id="togglePassword" class="toggle-password">
+          <i class="fa fa-eye"></i>
+        </button>
+      </div>
+
+      <button type="submit" class="submit-buttton">Sign In</button>
+    </form>
+
+    <div class="divider"><div>or</div></div>
+
+    <div class="social-login">
+      <button class="google-btn">Sign in with Google</button>
+      <button class="microsoft-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" 
+             alt="Microsoft Logo" width="20" height="20">
+        Sign in with Microsoft
+      </button>
+    </div>
+
+    <div class="forgot-password">
+      <a href="Forgoat_Password.html">Forgot password? </a>
+    </div>
+  </div>
+
+  <script src="Login_page.js"></script>
+</body>
+</html>
